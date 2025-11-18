@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursy Snapchat</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="side-decor left"></div>
+    <div class="side-decor right"></div>
+    <header>
+        <h1>Kursy Zarabiania na Snapchat</h1>
+        <p>Odkryj, jak wykorzystać Snapchat do generowania dochodu!</p>
+    </header>
+    <main>
+        <section id="darmowy-kurs" class="course-box">
+            <h2>Darmowy Kurs</h2>
+            <p>Wprowadzenie do zarabiania na Snapchat – idealny na start!</p>
+            <div style="margin-bottom:1.2rem;">
+                <span style="font-size:1.6rem; color:var(--yellow); font-weight:bold;">0 zł</span>
+            </div>
+            <ul class="course-features">
+                <li>Podstawy działania Snapchata</li>
+                <li>Tworzenie angażujących treści</li>
+                <li>Budowanie pierwszej społeczności</li>
+            </ul>
+            <button id="register-free">Zarejestruj się za darmo</button>
+        </section>
+        <section id="platny-kurs" class="course-box">
+            <h2>Płatny Kurs</h2>
+            <p>Zaawansowane strategie i wsparcie – dla ambitnych!</p>
+            <div style="margin-bottom:1.2rem;">
+                <span style="font-size:1.6rem; color:var(--yellow); font-weight:bold;">49 zł</span>
+                <span style="font-size:1rem; color:#aaa; text-decoration:line-through; margin-left:0.7rem;">99 zł</span>
+                <span style="color:var(--yellow); font-size:0.95rem; margin-left:0.5rem;">Promocja!</span>
+            </div>
+            <ul class="course-features">
+                <li>Zaawansowane techniki monetyzacji</li>
+                <li>Dostęp do zamkniętej grupy</li>
+                <li>Indywidualne konsultacje</li>
+            </ul>
+            <button id="register-paid">Zarejestruj się na płatny kurs</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Kursy Snapchat. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+
+    <!-- MODALE -->
+    <div id="modal-free" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal-free">&times;</span>
+            <h3>Rejestracja na darmowy kurs</h3>
+            <form id="form-free">
+                <input type="email" name="email" placeholder="Twój e-mail" required>
+                <button type="submit">Zapisz się</button>
+            </form>
+            <div class="modal-message" id="msg-free"></div>
+        </div>
+    </div>
+    <div id="modal-paid" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal-paid">&times;</span>
+            <h3>Rejestracja na płatny kurs</h3>
+            <form id="form-paid">
+                <input type="email" name="email" placeholder="Twój e-mail" required>
+                <button type="submit">Zapisz się</button>
+            </form>
+            <div class="modal-message" id="msg-paid"></div>
+        </div>
+    </div>
+</body>
+</html>

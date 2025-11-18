@@ -1,0 +1,22 @@
+{
+  "name": "kursy-snapchat",
+  "version": "1.0.0",
+  "description": "Strona internetowa sprzedająca kursy dotyczące zarabiania metodą związaną z Snapchatem.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "kursy",
+    "Snapchat",
+    "zarabianie",
+    "e-learning"
+  ],
+  "author": "Twoje Imię",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
